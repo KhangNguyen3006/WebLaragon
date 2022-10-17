@@ -1,0 +1,58 @@
+.text-field {
+   position: relative;
+ }
+ .text-field label {
+   display: inline-block;
+   font-weight: 400;
+   cursor: pointer;
+   position: absolute;
+   top: 0;
+   left: 5px;
+   background-color: #fff;
+   padding: 1px 5px;
+   font-size: 15px;
+   transform: translateY(-50%);
+   color: #6a5af9;
+ }
+ .text-field input {
+   padding: 15px;
+   display: block;
+   width: 80%;
+   font-size: 15px;
+   border: 1px solid #6a5af9;
+   border-radius: 4px;
+   background-color: transparent;
+   color:#000;
+ }
+
+.submit {
+   --color: #00BFFF;
+   font-family: "Poppins", sans-serif;
+   color: #0000FF;
+   padding: 15px 20px;
+   border-radius: 4px;
+   background-color: transparent;
+   cursor: pointer;
+   font-weight: 400;
+   outline: none;
+   border: 1px solid var(--color);
+   font-size: 16px;
+   position: relative;
+   isolation: isolate;
+ }
+ .submit:before {
+   content: "";
+   height: 0;
+   width: 100%;
+   position: absolute;
+   top: 0;
+   left: 0;
+   background-color: var(--color);
+   z-index: -1;
+   transition: height 0.25s ease-in;
+ }
+ .submit:hover:before {
+   height: 80%;
+ }
+
+ 
